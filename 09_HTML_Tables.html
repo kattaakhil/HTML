@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table TAG</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+        }
+       table , th , td{
+        border: 2px solid orange;
+        border-collapse: collapse;
+        text-align: center;
+        padding 10px;
+       }
+       #custom thead{
+        background-color: red;
+        color: white;
+       }
+    </style>
+</head>
+<body>
+
+    <!-- Simple Table -->
+    <h2> Simple Table </h2>
+    <table width="100%">
+        <thead>
+            <tr>
+                <th>SNO</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>AKHIL</td>
+                <td>US</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>TARUN</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>GUNA</td>
+                <td>INDIA</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Table with Col Span -->
+    <h2> Table with Col Span </h2>
+    <table width="100%">
+        <thead>
+            <tr>
+                <th>SNO</th>
+                <th colspan="2">NAME & ADDRESS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>AKHIL</td>
+                <td>US</td>
+            </tr>
+            <tr>
+                <td colspan="3">2 & THARUN & UK</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>GUNA</td>
+                <td>INDIA</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Table With Row Span -->
+    <h2> Table With Row Span </h2>
+    <table width="100%">
+        <thead>
+            <tr>
+                <th>SNO</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">1</td>
+                <td>AKHIL</td>
+                <td rowspan="3">US</td>
+            </tr>
+            <tr>
+                <td>TARUN</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>GUNA</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Custom Table with CSS -->
+    <h2> Custom Table with CSS </h2> 
+    <table width="100%" id="custom">
+        <thead>
+            <tr>
+                <th>SNO</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>AKHIL</td>
+                <td>US</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>TARUN</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>GUNA</td>
+                <td>INDIA</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

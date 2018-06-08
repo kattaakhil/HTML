@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Elements</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+            font-family: "Comic Sans MS", sans-serif;
+        }
+        div{
+            background-color: forestgreen;
+            color: white;
+            padding: 10px;
+            width: 400px;
+        }
+        td, tr{
+            align-content: center;
+        }
+        h2{
+            background-color: orange;
+            color: white;
+            width: 400px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- Simple Login Form -->
+    <h2>Simple Login Form</h2>
+    <div>
+        <form>
+            <label for="username"> User Name</label>
+            <input type="text" id="username">
+            <br>
+            <label for="password"> Password </label>
+            <input type="password" id="password">
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+
+    <!-- Login form with Table -->
+    <h2>Login Form with Table</h2>
+    <div>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <label for="username"> User Name </label>
+                    </td>
+                    <td>
+                        <input type="text" name="username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password"> Password </label>
+                    </td>
+                    <td>
+                        <input type="password" name="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit">
+                    </td>
+                    <td>
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <!-- Select box with Options -->
+    <h2>Select Box with Options</h2>
+    <div>
+        <form>
+            <label>Select a Language</label>
+            <select>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>Java Script</option>
+                <option>JQuery</option>
+                <option>AJAX</option>
+                <option>Bootstrap</option>
+                <option>Angular JS</option>
+            </select>
+        </form>
+    </div>
+
+    <!-- Textarea box -->
+    <h2>Textarea box</h2>
+    <div>
+        <form>
+            <label>Enter Your Message</label>
+            <textarea rows="6" cols="40"></textarea>
+        </form>
+    </div>
+
+    <!-- Datalist (HTML5) -->
+    <h2>Datalist (HTML 5)</h2>
+    <div>
+        <form>
+            <label>Select A Language</label>
+            <input list="technologies" name="tech">
+            <datalist id="technologies">
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>Java Script</option>
+                <option>JQuery</option>
+                <option>AJAX</option>
+                <option>Bootstrap</option>
+                <option>Angular JS</option>
+            </datalist>
+        </form>
+    </div>
+
+
+</body>
+</html>

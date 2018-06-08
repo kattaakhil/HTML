@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Input Types</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS", sans-serif;
+        }
+        div{
+            background-color: forestgreen;
+            padding: 10px;
+            color: white;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 align="center">HTML Input Types</h1>
+
+    <!-- input type text -->
+    <h2>Text Box</h2>
+    <div>
+        <form>
+            <label>User Name</label>
+            <input type="text">
+        </form>
+    </div>
+
+    <!-- input type password -->
+    <h2>Password Box</h2>
+    <div>
+        <form>
+            <label>Password</label>
+            <input type="password">
+        </form>
+    </div>
+
+    <!-- input type submit -->
+    <h2>Submit Button</h2>
+    <div align="center">
+        <form>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- input type reset -->
+    <h2>Reset Button</h2>
+    <div align="center">
+        <form>
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+
+    <!-- input type radio -->
+    <h2>Radio Field</h2>
+    <div align="center">
+        <form>
+            <label>
+                is HTML easy
+            </label>
+            <input type="radio" name="easy" value="yes">YES
+            <input type="radio" name="easy" value="no">NO
+        </form>
+    </div>
+
+    <!-- input type checkbox -->
+    <h2>Check Box</h2>
+     <div align="center">
+        <form>
+            <label>Select Your Hobbies </label>
+            <input type="checkbox" value="eating">Eating
+            <input type="checkbox" value="sleeping">Sleeping
+            <input type="checkbox" value="coding">Coding
+        </form>
+    </div>
+
+    <!-- HTML5 Input Types color, date, datetime-local, email,
+    month, number, range, search, time, url, Week-->
+
+    <h1 align="center">HTML5 Input Types</h1>
+
+    <!-- color -->
+    <h2>Input Type color</h2>
+    <div>
+        <form>
+            <label>Select A Color</label>
+            <input type="color">
+        </form>
+    </div>
+
+    <!-- date -->
+    <h2>Input Type date</h2>
+    <div>
+        <form>
+            <label>Select A Date</label>
+            <input type="date">
+        </form>
+    </div>
+
+    <!-- datetime-local -->
+    <h2>Input Type datetime-local</h2>
+    <div>
+        <form>
+            <label>Select Time & Date</label>
+            <input type="datetime-local">
+        </form>
+    </div>
+
+    <!-- email -->
+    <h2>Input Type email</h2>
+    <div align="center">
+        <form>
+            <label>Enter Your Email</label>
+            <input type="email">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- month -->
+    <h2>Input Type month</h2>
+    <div>
+        <form>
+            <label>Select A Month</label>
+            <input type="month">
+        </form>
+    </div>
+
+    <!-- number -->
+    <h2>Input Type number</h2>
+    <div>
+        <form>
+            <label>Enter Your Age</label>
+            <input type="number" min="18" max="70">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- range -->
+    <h2>Input Type range</h2>
+    <div>
+        <form>
+            <label>Select The Range</label>
+            0<input type="range" min="0" max="100" id="add">100
+            <input type="submit" value="Submit" onclick="alert(document.getElementById('add').value)">
+        </form>
+    </div>
+
+    <!-- search -->
+    <h2>Input Type search</h2>
+    <div>
+        <form>
+            <label>Search Here</label>
+            <input type="search">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- time -->
+    <h2>Input Type time</h2>
+    <div>
+        <form>
+            <label>Select Time</label>
+            <input type="time">
+        </form>
+    </div>
+
+    <!-- week -->
+    <h2>Input Type week</h2>
+    <div>
+        <form>
+            <label>Select Type Of Week</label>
+            <input type="week">
+        </form>
+    </div>
+
+    <!-- URL -->
+    <h2>Input Type url</h2>
+    <div>
+        <form>
+            <label>Enter Your Website</label>
+            <input type="url">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- File-->
+    <h2>Input Type File</h2>
+    <div>
+        <form>
+            <label>Select A File To Upload</label>
+            <input type="file">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+<br><br><br>
+</body>
+</html>
